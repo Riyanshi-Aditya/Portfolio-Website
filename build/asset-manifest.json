@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2bc10949.css",
+    "main.js": "/static/js/main.918e1a74.js",
+    "static/media/NTR-Regular.ttf": "/static/media/NTR-Regular.325a44bd3c015f909958.ttf",
+    "index.html": "/index.html",
+    "main.2bc10949.css.map": "/static/css/main.2bc10949.css.map",
+    "main.918e1a74.js.map": "/static/js/main.918e1a74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bc10949.css",
+    "static/js/main.918e1a74.js"
+  ]
+}
