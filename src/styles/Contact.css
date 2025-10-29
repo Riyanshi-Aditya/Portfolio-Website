@@ -1,0 +1,139 @@
+#contact {
+  padding: 40px 10%; /* kam padding */
+  min-height: 60vh; /* 70 se 60 kiya */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.section-header {
+  margin-top: 50px;
+}
+
+.section-title {
+  font-family: "NTR", sans-serif;
+  color: var(--green-bright);
+  font-size: 22px;
+  margin-left: 1px; /* small right shift */
+  letter-spacing: 1px;
+}
+#contact .section-title {
+  margin-left: 200px; /* matches the project-creations alignment */
+}
+
+.contact-container {
+  background-color: rgba(17, 14, 45, 0.8);
+  border-radius: 20px;
+  padding: 1.5rem; /* kam padding */
+  width: 80%; /* thoda aur narrow */
+  box-shadow: 0 0 25px rgba(100, 0, 200, 0.2);
+  border: 1px solid rgba(150, 80, 255, 0.3);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  transition: all 0.4s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 35px rgba(160, 80, 255, 0.35);
+  background-color: rgba(17, 14, 45, 0.9);
+}
+
+.contact-heading {
+  font-family: "NTR", sans-serif;
+  color: var(--lightest-slate);
+  font-size: 32px;
+  text-align: center;
+}
+
+.contact-subtext {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  color: var(--lightest-slate);
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  background-color: var(--navy);
+  border: 1px solid var(--green-bright);
+  border-radius: 10px;
+  padding: 0.8rem;
+  color: var(--lightest-slate);
+  font-family: "NTR", sans-serif;
+  outline: none;
+  height: 45px; /* 🔹 fixed height for smaller form */
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--green-bright);
+  box-shadow: 0 0 10px var(--green-bright);
+}
+
+.send-btn {
+  background-color: var(--green-bright);
+  color: var(--navy);
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "NTR", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--lightest-navy);
+  color: var(--green-bright);
+}
+
+#status {
+  margin-top: 1rem;
+  color: var(--green-bright);
+  font-family: "NTR", sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  #contact {
+    padding: 2rem;
+  }
+  .contact-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+/* Prevent white autofill background */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #0d0d1a inset !important; /* same as your input bg color */
+  -webkit-text-fill-color: #e0e0e0 !important; /* your text color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Optional - to maintain glow/focus styling */
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #15152a inset !important; /* slightly brighter on focus */
+  -webkit-text-fill-color: #ffffff !important;
+}
